@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of India - Menu</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Menu Card */
+        .menu-card {
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .menu-header {
+            background-color: #ff4500;
+            color: #fff;
+            text-align: center;
+            padding: 30px 15px;
+            border-radius: 15px 15px 0 0;
+        }
+        .menu-header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: bold;
+        }
+        .menu-header p {
+            margin: 8px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Section Header */
+        .menu-section {
+            padding: 25px 20px;
+        }
+        .menu-section h2 {
+            color: #ff4500;
+            border-bottom: 3px solid #ff4500;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Dish List */
+        .dish-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .dish-item {
+            flex: 1 1 calc(50% - 20px);
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .dish-item img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        .dish-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #ff4500;
+        }
+        .dish-item p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .dish-item .price {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            font-size: 1.3em;
+            border-radius: 0 0 15px 15px;
+        }
+        .contact-info strong {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <div class="menu-header">
+            <h1>Taste of India</h1>
+            <p>Main Course Menu</p>
+        </div>
+
+        <!-- Non-Veg Section -->
+        <div class="menu-section">
+            <h2>Non-Veg Dishes</h2>
+            <ul class="dish-list">
+                <li class="dish-item">
+                    <img src="images/shahi-pulao-chicken.jpg" alt="Shahi Pulao (Chicken)">
+                    <h3>Shahi Pulao (Chicken)</h3>
+                    <p>Flavorful basmati rice cooked with tender chicken, aromatic spices, and herbs.</p>
+                    <p class="price">Price: ₹150/300</p>
+                </li>
+                <li class="dish-item">
+                    <img src="images/chicken-chaap.jpg" alt="Chicken Chaap">
+                    <h3>Chicken Chaap</h3>
+                    <p>Rich and creamy chicken curry slow-cooked with spices and served with naan or rice.</p>
+                    <p class="price">Price: ₹200/300</p>
+                </li>
+                <li class="dish-item">
+                    <img src="images/prawn-tawa-masala.jpg" alt="Prawn Tawa Masala">
+                    <h3>Prawn Tawa Masala</h3>
+                    <p>Succulent prawns cooked with spicy masala on a tawa for a smoky flavor.</p>
+                    <p class="price">Price: ₹250/400</p>
+                </li>
+                <li class="dish-item">
+                    <img src="images/chicken-masala.jpg" alt="Chicken Masala">
+                    <h3>Chicken Masala</h3>
+                    <p>Classic chicken curry made with freshly ground spices for a hearty meal.</p>
+                    <p class="price">Price: ₹150/300</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Veg Section -->
+        <div class="menu-section">
+            <h2>Veg Dishes</h2>
+            <ul class="dish-list">
+                <li class="dish-item">
+                    <img src="images/shahi-pulao-paneer.jpg" alt="Shahi Pulao (Paneer)">
+                    <h3>Shahi Pulao (Paneer)</h3>
+                    <p>Aromatic rice prepared with paneer cubes, nuts, and fragrant spices.</p>
+                    <p class="price">Price: ₹100/150</p>
+                </li>
+                <li class="dish-item">
+                    <img src="images/mushroom-masala.jpg" alt="Mushroom Masala">
+                    <h3>Mushroom Masala</h3>
+                    <p>Sautéed mushrooms cooked in a rich and creamy tomato-based curry.</p>
+                    <p class="price">Price: ₹100/150</p>
+                </li>
+                <li class="dish-item">
+                    <img src="images/paneer-butter-masala.jpg" alt="Paneer Butter Masala">
+                    <h3>Paneer Butter Masala</h3>
+                    <p>Creamy and mildly spiced curry with soft paneer cubes.</p>
+                    <p class="price">Price: ₹100/150</p>
+                </li>
+                <li class="dish-item">
+                    <img src="images/badam-baingan-dry.jpg" alt="Badam Baingan Dry">
+                    <h3>Badam Baingan Dry</h3>
+                    <p>Delicious brinjal stir-fried with almonds and traditional spices.</p>
+                    <p class="price">Price: ₹100/150</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            For orders, please WhatsApp us at: <strong>9731340860</strong>
+        </div>
+    </div>
+</body>
+</html>
